@@ -6,64 +6,84 @@
     <title>Meet Vora Premium™ - 1-Month Free Trial</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f9f9f9;
-            color: #333;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #4a4a4a;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #fdcb6e;
             color: white;
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
+            font-size: 2rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         main {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2rem auto;
             background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
             overflow: hidden;
+            animation: slide-in 1s ease-out;
+        }
+        @keyframes slide-in {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
         .content {
             padding: 2rem;
         }
-        h1, h2 {
-            color: #4CAF50;
+        h1 {
+            color: #e17055;
+        }
+        h2 {
+            color: #fd79a8;
         }
         ul {
             padding-left: 1.5rem;
         }
+        ul li {
+            margin: 0.7rem 0;
+        }
         footer {
             text-align: center;
-            padding: 1rem;
-            background-color: #333;
+            padding: 1.2rem;
+            background-color: #00cec9;
             color: white;
             margin-top: 2rem;
+            border-top: 4px solid #0984e3;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Meet Vora Premium™</h1>
-        <p>Your 1-Month Free Trial Starts Here!</p>
+        🌟 Welcome to Meet Vora Premium™ 🌟
     </header>
     <main>
         <div class="content">
-            <h2>Welcome!</h2>
-            <p>Enjoy your exclusive one-month trial of <strong>Meet Vora Premium™</strong>, packed with amazing features made just for you:</p>
+            <h1>Let the Fun Begin!</h1>
+            <p>It's time to enjoy your personalized free trial of <strong>Meet Vora Premium™</strong>. Packed with exciting experiences made just for YOU!</p>
+            <h2>Features:</h2>
             <ul>
-                <li><strong>Daily Check-Ins:</strong> Regular updates about your progress and how the day is going.</li>
-                <li><strong>Weekly Meetups:</strong> Fries and drinks included (distance permitting!).</li>
-                <li><strong>Monthly Tests:</strong> Fun evaluations on all that you’ve learned!</li>
+                <li><strong>Daily Check-Ins:</strong> Let’s talk about your day and how awesome you're doing!</li>
+                <li><strong>Weekly Meetups:</strong> Fries, drinks, and an unbeatable vibe (distance permitting of course!).</li>
+                <li><strong>Monthly Tests:</strong> Discover what you've learned and maybe earn a gold star 🌟!</li>
             </ul>
             <p><em>"I thought this would be about long drives and romantic dates!”</em></p>
         </div>
     </main>
     <footer>
-        <p>&copy; 2026 Meet Vora Premium™</p>
+        Made with 💖 for you | &copy; 2026 Meet Vora Premium™
     </footer>
 </body>
 </html>
