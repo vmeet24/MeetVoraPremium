@@ -42,6 +42,7 @@
         }
         .content {
             padding: 2rem;
+            text-align: center;
         }
         h1 {
             color: #e17055;
@@ -49,11 +50,22 @@
         h2 {
             color: #fd79a8;
         }
-        ul {
-            padding-left: 1.5rem;
+        .button-container {
+            margin-top: 1.5rem;
         }
-        ul li {
-            margin: 0.7rem 0;
+        button {
+            background-color: #fdcb6e;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e17055;
         }
         footer {
             text-align: center;
@@ -63,6 +75,11 @@
             margin-top: 2rem;
             border-top: 4px solid #0984e3;
         }
+        .response {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -71,19 +88,26 @@
     </header>
     <main>
         <div class="content">
-            <h1>Let the Fun Begin!</h1>
-            <p>It's time to enjoy your personalized free trial of <strong>Meet Vora Premium™</strong>. Packed with exciting experiences made just for YOU!</p>
-            <h2>Features:</h2>
-            <ul>
-                <li><strong>Daily Check-Ins:</strong> Let’s talk about your day and how awesome you're doing!</li>
-                <li><strong>Weekly Meetups:</strong> Fries, drinks, and an unbeatable vibe (distance permitting of course!).</li>
-                <li><strong>Monthly Tests:</strong> Discover what you've learned and maybe earn a gold star 🌟!</li>
-            </ul>
-            <p><em>"I thought this would be about long drives and romantic dates!”</em></p>
+            <h1>Would You Like to Start Your 1-Month Free Trial?</h1>
+            <div class="button-container">
+                <button onclick="respondYes()">Yes</button>
+                <button onclick="respondNo()">No</button>
+            </div>
+            <div class="response" id="response"></div>
         </div>
     </main>
     <footer>
         Made with 💖 for you | &copy; 2026 Meet Vora Premium™
     </footer>
+
+    <script>
+        function respondYes() {
+            document.getElementById('response').innerText = "Awesome! You're officially on the Meet Vora Premium™ trial. Let the fun begin! 🎉";
+        }
+
+        function respondNo() {
+            document.getElementById('response').innerText = "Oh no! You’re missing out on an amazing journey. Maybe next time? 😢";
+        }
+    </script>
 </body>
 </html>
